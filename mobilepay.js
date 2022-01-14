@@ -1,3 +1,15 @@
+(function() {
+	var qrious = document.createElement("script");
+	qrious.setAttribute("type", "text/javascript");
+	qrious.setAttribute("src", "qrious.js");
+	document.head.appendChild(qrious);
+	
+	var stylesheet = document.createElement("link");
+	stylesheet.setAttribute("rel", "stylesheet");
+	stylesheet.setAttribute("href", "mobilepay.css");
+	document.head.appendChild(stylesheet);
+})();
+
 function MobilePay(element) {
 	var child = element.firstChild;
 	while(child != null) {
